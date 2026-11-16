@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<meta name="description" content="Muntopia Fest — music, entertainment, family fun and community impact. Discover the festival, enquire about tickets, and partner with us.">
+<title>Muntopia Fest | Music • Entertainment • Community</title>
+<style>
+:root{--black:#101010;--panel:#191919;--gold:#d9ad43;--red:#c62828;--cream:#f7f2e8;--muted:#b9b3a7;--line:#34302a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(16,16,16,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:2px;font-size:1.25rem}.brand span{color:var(--gold)}nav{display:flex;gap:22px;align-items:center;font-size:.9rem}nav a:hover{color:var(--gold)}.menu{display:none;background:none;color:white;border:1px solid var(--line);padding:8px 12px;border-radius:8px}
+.btn{display:inline-block;padding:12px 19px;border-radius:6px;background:var(--gold);color:#17130b;font-weight:800;border:0;cursor:pointer}.btn.red{background:var(--red);color:white}.btn.outline{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.hero{min-height:620px;display:grid;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:180px;background:linear-gradient(transparent,var(--black))}.hero-content{position:relative;z-index:1;padding:90px 0;max-width:720px}.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:3px;font-size:.8rem}.hero h1{font-size:clamp(3rem,8vw,6.4rem);line-height:.98;margin:16px 0;font-weight:950;letter-spacing:-3px}.hero h1 span{color:var(--gold)}.hero p{font-size:1.15rem;color:#e6dfd2;max-width:580px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+section{padding:82px 0}.section-head{max-width:700px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;margin:8px 0 14px}.section-head p,.muted{color:var(--muted)}.gold{color:var(--gold)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-25px;position:relative;z-index:2}.stat{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:10px}.stat strong{display:block;color:var(--gold);font-size:1.6rem}.stat small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}.card .pad{padding:22px}.card h3{margin:0 0 8px;font-size:1.25rem}.icon{font-size:1.8rem}.card p{color:var(--muted);margin:0}.about{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}.visual{min-height:360px;border-radius:14px;background:linear-gradient(145deg,rgba(198,40,40,.4),rgba(217,173,67,.2)),url('https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1100&q=85') center/cover;border:1px solid var(--line)}
+.ticket{border-top:3px solid var(--gold)}.ticket .price{font-size:2.1rem;color:var(--gold);font-weight:900;margin:10px 0}.ticket.featured{border-color:var(--red)}.ticket.featured .price{color:#ff7777}
+.sponsor{background:linear-gradient(135deg,#211a12,#171717 65%);border-block:1px solid #44351b}.sponsor-box{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.sponsor-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.sponsor-list div{padding:15px;border:1px solid var(--line);border-radius:8px;color:#e9dfcd}
+.banner{padding:28px;border-radius:12px;background:linear-gradient(110deg,#8f1717,#bd2828 55%,#9c6d1c);display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h2{margin:0;font-size:1.8rem}.banner p{margin:4px 0 0;color:#fff0dc}
+form{display:grid;gap:12px}input,select,textarea{width:100%;padding:13px 14px;background:#111;color:white;border:1px solid #48423a;border-radius:7px;font:inherit}textarea{min-height:120px;resize:vertical}label{font-size:.9rem;color:#e5dccd}footer{padding:38px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.notice{font-size:.82rem;color:#bdb5a7;margin-top:12px}
+@media(max-width:760px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:#151515;padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.hero{min-height:560px}.stats,.grid,.about,.sponsor-box{grid-template-columns:1fr}.stats{margin-top:0}.visual{min-height:260px}.banner{align-items:flex-start;flex-direction:column}section{padding:62px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home">MUN<span>TOPIA</span> FEST</a>
+  <button class="menu" aria-label="Open navigation" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+  <nav>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#tickets">Tickets</a><a href="#partners">Sponsors</a><a href="#contact">Contact</a>
+    <a class="btn" href="#tickets">Ticket enquiries</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap hero-content">
+  <div class="eyebrow">Music • Entertainment • Lifestyle • Community</div>
+  <h1>WELCOME TO<br><span>MUNTOPIA FEST.</span></h1>
+  <p>More than a festival — a place to connect through music, celebrate local talent, enjoy family entertainment and create unforgettable memories.</p>
+  <div class="hero-actions"><a class="btn" href="#tickets">GET TICKET INFO</a><a class="btn outline" href="#partners">BECOME A PARTNER</a></div>
+  <p class="notice">26 December 2026 · LoCrate Market, Orlando West, Soweto</p>
+</div></section>
+
+<div class="wrap stats">
+  <div class="stat"><strong>500+</strong><small>Target festival attendance</small></div>
+  <div class="stat"><strong>All ages</strong><small>Entertainment for the whole family</small></div>
+  <div class="stat"><strong>Community</strong><small>Local opportunity and youth development</small></div>
+</div>
+
+<section id="about"><div class="wrap about">
+  <div><div class="eyebrow">Who we are</div><div class="section-head"><h2>A festival with <span class="gold">purpose.</span></h2>
+  <p>Muntopia Fest is an entertainment and events initiative bringing people together through music, culture, family activities and shared experiences. We aim to create opportunities for young people, showcase talent and build meaningful connections between communities, businesses and the creative industry.</p></div>
+  <h3 class="gold">Our vision</h3><p class="muted">To grow a recognisable events brand that delivers memorable experiences while creating positive community impact.</p>
+  <h3 class="gold">Our mission</h3><p class="muted">To provide a welcoming platform for entertainment, local talent, youth participation and partnerships that help communities thrive.</p></div>
+  <div class="visual" role="img" aria-label="Live music festival crowd"></div>
+</div></section>
+
+<section id="experience" style="background:#151515"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">The experience</div><h2>Something for <span class="gold">everyone.</span></h2><p>From live entertainment to family-friendly attractions, Muntopia is designed to bring people together.</p></div>
+  <div class="grid">
+    <article class="card"><div class="pad"><div class="icon">🎤</div><h3>Live music & DJs</h3><p>Enjoy performances, DJ sets and a lively festival atmosphere celebrating music and talent.</p></div></article>
+    <article class="card"><div class="pad"><div class="icon">🎡</div><h3>Family fun</h3><p>Family-friendly activities, including planned jumping-castle entertainment for younger guests.</p></div></article>
+    <article class="card"><div class="pad"><div class="icon">📸</div><h3>Photo moments</h3><p>Capture the day with a photo-booth experience and memorable festival moments.</p></div></article>
+    <article class="card"><div class="pad"><div class="icon">🍔</div><h3>Food & vendors</h3><p>Discover food, refreshments and small businesses. Vendor opportunities will be announced.</p></div></article>
+    <article class="card"><div class="pad"><div class="icon">🌱</div><h3>Youth development</h3><p>Support opportunities for young people through participation, exposure and community partnerships.</p></div></article>
+    <article class="card"><div class="pad"><div class="icon">🤝</div><h3>Community connections</h3><p>Bring residents, creatives, organisations and businesses together around a shared experience.</p></div></article>
+  </div>
+</div></section>
+
+<section id="tickets"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Join the festival</div><h2>Your Muntopia experience <span class="gold">starts here.</span></h2><p>Use the enquiry options below to ask about tickets. Final ticket availability, terms and children's pricing must be confirmed by the organisers.</p></div>
+  <div class="grid">
+    <article class="card ticket"><div class="pad"><h3>Early Bird</h3><div class="price">R50</div><p>Early-bird ticket price as planned. Limited availability and sale dates to be confirmed.</p><p style="margin-top:20px"><a class="btn" href="#contact">Enquire</a></p></div></article>
+    <article class="card ticket featured"><div class="pad"><h3>General Admission</h3><div class="price">R150</div><p>Planned general ticket price. Check with the organisers for availability and entry details.</p><p style="margin-top:20px"><a class="btn red" href="#contact">Enquire</a></p></div></article>
+    <article class="card ticket"><div class="pad"><h3>Kids Tickets</h3><div class="price">To be announced</div><p>Family ticket information and age requirements will be shared by the organisers.</p><p style="margin-top:20px"><a class="btn outline" href="#contact">Ask us</a></p></div></article>
+  </div>
+  <p class="notice">Ticket prices shown are planning details supplied for this draft website and should be verified before public launch.</p>
+</div></section>
+
+<section class="sponsor" id="partners"><div class="wrap sponsor-box">
+  <div><div class="eyebrow">Partner with us</div><h2 style="font-size:clamp(2rem,4vw,3rem);line-height:1.1">Put your brand at the heart of <span class="gold">Muntopia.</span></h2>
+  <p class="muted">We welcome conversations with businesses, brands, media houses, NGOs and organisations interested in event sponsorship, youth development, brand visibility and community impact.</p>
+  <a class="btn" href="#contact">DISCUSS A PARTNERSHIP</a></div>
+  <div class="sponsor-list"><div>★ Event sponsorship</div><div>★ Brand activations</div><div>★ Youth development</div><div>★ Media partnerships</div><div>★ Product & service support</div><div>★ Community initiatives</div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Let's connect</div><h2>Talk to the <span class="gold">Muntopia team.</span></h2><p>For ticket enquiries, sponsorship proposals, vendor opportunities, artist enquiries or general information, send us a message.</p></div>
+  <div class="grid" style="grid-template-columns:1fr 1.2fr">
+    <div><h3>Get in touch</h3><p class="muted">Email: <span id="emailText">Add your official email address</span></p><p class="muted">WhatsApp: <span id="phoneText">Add your Muntopia WhatsApp number</span></p><p class="muted">Event: 26 December 2026<br>Venue: LoCrate Market, Orlando West, Soweto</p><p class="notice">Update the contact details in the website settings before publishing.</p></div>
+    <form id="contactForm">
+      <label>Your name<input name="name" required placeholder="Your full name"></label>
+      <label>Email address<input name="email" type="email" required placeholder="you@example.com"></label>
+      <label>What is your enquiry about?
+        <select name="topic"><option>Ticket enquiry</option><option>Sponsorship / partnership</option><option>Vendor application</option><option>Artist / performer enquiry</option><option>Media enquiry</option><option>General enquiry</option></select>
+      </label>
+      <label>Message<textarea name="message" required placeholder="How can the Muntopia team help?"></textarea></label>
+      <button class="btn" type="submit">SEND ENQUIRY</button>
+      <p class="notice" id="formNotice">The form will open your email app once the official email address has been configured.</p>
+    </form>
+  </div>
+</div></section>
+
+<section class="wrap"><div class="banner"><div><h2>Be part of the Muntopia story.</h2><p>Follow the journey. Share the experience. Grow with us.</p></div><a class="btn" href="#contact">CONNECT WITH US</a></div></section>
+</main>
+
+<footer><div class="wrap footer-row"><div><div class="brand">MUN<span>TOPIA</span> FEST</div><small>Music. Entertainment. Lifestyle. Community.</small></div><div>© <span id="year"></span> Muntopia Fest. All rights reserved.<br><small>Website draft — event details to be confirmed.</small></div></div></footer>
+
+<script>
+/* EDIT THESE FOUR SETTINGS before publishing. Use digits only for WhatsApp, e.g. 277XXXXXXXX. */
+const MUNTOPIA = {
+  email: "",
+  whatsapp: "27722110708",
+  eventDate: "26 December 2026",
+  venue: "LoCrate Market, Orlando West, Soweto"
+};
+document.getElementById("year").textContent = new Date().getFullYear();
+if (MUNTOPIA.email) document.getElementById("emailText").textContent = MUNTOPIA.email;
+if (MUNTOPIA.whatsapp !== "27XXXXXXXXX") {
+  document.getElementById("phoneText").innerHTML = '<a href="https://wa.me/'+MUNTOPIA.whatsapp+'">Chat with us on WhatsApp</a>';
+}
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  if (!MUNTOPIA.email) {
+    document.getElementById("formNotice").textContent = "The Muntopia email address has not been added yet. Please contact us on WhatsApp for now.";
+    return;
+  }
+  const d = new FormData(this);
+  const subject = encodeURIComponent("Muntopia website enquiry — " + d.get("topic"));
+  const body = encodeURIComponent("Name: "+d.get("name")+"\nEmail: "+d.get("email")+"\nEnquiry: "+d.get("topic")+"\n\n"+d.get("message"));
+  window.location.href = "mailto:"+MUNTOPIA.email+"?subject="+subject+"&body="+body;
+});
+</script>
+</body>
+</html>
