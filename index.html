@@ -17,11 +17,11 @@ header{position:sticky;top:0;z-index:10;background:rgba(16,16,16,.94);backdrop-f
 section{padding:82px 0}.section-head{max-width:700px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;margin:8px 0 14px}.section-head p,.muted{color:var(--muted)}.gold{color:var(--gold)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-25px;position:relative;z-index:2}.stat{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:10px}.stat strong{display:block;color:var(--gold);font-size:1.6rem}.stat small{color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}.card .pad{padding:22px}.card h3{margin:0 0 8px;font-size:1.25rem}.icon{font-size:1.8rem}.card p{color:var(--muted);margin:0}.about{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}.visual{min-height:360px;border-radius:14px;background:linear-gradient(145deg,rgba(198,40,40,.4),rgba(217,173,67,.2)),url('https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1100&q=85') center/cover;border:1px solid var(--line)}
-.ticket{border-top:3px solid var(--gold)}.ticket .price{font-size:2.1rem;color:var(--gold);font-weight:900;margin:10px 0}.ticket.featured{border-color:var(--red)}.ticket.featured .price{color:#ff7777}
+.poster-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.85fr);gap:28px;align-items:center}.poster-image{display:block;width:100%;max-width:620px;margin:auto;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.4)}.poster-copy{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px}.ticket{border-top:3px solid var(--gold)}.ticket .price{font-size:2.1rem;color:var(--gold);font-weight:900;margin:10px 0}.ticket.featured{border-color:var(--red)}.ticket.featured .price{color:#ff7777}
 .sponsor{background:linear-gradient(135deg,#211a12,#171717 65%);border-block:1px solid #44351b}.sponsor-box{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.sponsor-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.sponsor-list div{padding:15px;border:1px solid var(--line);border-radius:8px;color:#e9dfcd}
 .banner{padding:28px;border-radius:12px;background:linear-gradient(110deg,#8f1717,#bd2828 55%,#9c6d1c);display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h2{margin:0;font-size:1.8rem}.banner p{margin:4px 0 0;color:#fff0dc}
 form{display:grid;gap:12px}input,select,textarea{width:100%;padding:13px 14px;background:#111;color:white;border:1px solid #48423a;border-radius:7px;font:inherit}textarea{min-height:120px;resize:vertical}label{font-size:.9rem;color:#e5dccd}footer{padding:38px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.notice{font-size:.82rem;color:#bdb5a7;margin-top:12px}
-@media(max-width:760px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:#151515;padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.hero{min-height:560px}.stats,.grid,.about,.sponsor-box{grid-template-columns:1fr}.stats{margin-top:0}.visual{min-height:260px}.banner{align-items:flex-start;flex-direction:column}section{padding:62px 0}}
+@media(max-width:760px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:#151515;padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.hero{min-height:560px}.stats,.grid,.about,.sponsor-box,.poster-wrap{grid-template-columns:1fr}.stats{margin-top:0}.visual{min-height:260px}.banner{align-items:flex-start;flex-direction:column}section{padding:62px 0}}
 </style>
 </head>
 <body>
@@ -69,14 +69,21 @@ form{display:grid;gap:12px}input,select,textarea{width:100%;padding:13px 14px;ba
   </div>
 </div></section>
 
-<section id="tickets"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">Join the festival</div><h2>Your Muntopia experience <span class="gold">starts here.</span></h2><p>Use the enquiry options below to ask about tickets. Final ticket availability, terms and children's pricing must be confirmed by the organisers.</p></div>
-  <div class="grid">
-    <article class="card ticket"><div class="pad"><h3>Early Bird</h3><div class="price">R50</div><p>Early-bird ticket price as planned. Limited availability and sale dates to be confirmed.</p><p style="margin-top:20px"><a class="btn" href="#contact">Enquire</a></p></div></article>
-    <article class="card ticket featured"><div class="pad"><h3>General Admission</h3><div class="price">R150</div><p>Planned general ticket price. Check with the organisers for availability and entry details.</p><p style="margin-top:20px"><a class="btn red" href="#contact">Enquire</a></p></div></article>
-    <article class="card ticket"><div class="pad"><h3>Kids Tickets</h3><div class="price">To be announced</div><p>Family ticket information and age requirements will be shared by the organisers.</p><p style="margin-top:20px"><a class="btn outline" href="#contact">Ask us</a></p></div></article>
+<section id="poster" style="background:#151515"><div class="wrap poster-wrap">
+  <div><div class="eyebrow">The official event poster</div><div class="section-head"><h2>Soweto, <span class="gold">stand up!</span></h2><p>Join us for a day of food, music, games and family fun at LoCrate Market, Orlando West.</p></div>
+    <div class="poster-copy"><h3>Festival details</h3><p><strong>26 December 2026</strong> · 11:00 till late</p><p><strong>Venue:</strong> LoCrate Market, Orlando West, Soweto</p><p><strong>WhatsApp:</strong> 072 211 0708</p><a class="btn" href="https://wa.me/27722110708?text=Hi%20Muntopia%20Fest%2C%20I%27d%20like%20ticket%20information.">ASK ABOUT TICKETS</a></div>
   </div>
-  <p class="notice">Ticket prices shown are planning details supplied for this draft website and should be verified before public launch.</p>
+  <a href="muntopia-fest-poster.jpg" target="_blank" rel="noopener"><img class="poster-image" src="muntopia-fest-poster.jpg" alt="Muntopia Fest event poster"></a>
+</div></section>
+
+<section id="tickets"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Join the festival</div><h2>Your Muntopia experience <span class="gold">starts here.</span></h2><p>Choose your ticket category below, then contact the Muntopia team on WhatsApp to confirm availability and arrange your ticket.</p></div>
+  <div class="grid">
+    <article class="card ticket"><div class="pad"><h3>Early Bird</h3><div class="price">R50</div><p>First 200 tickets only.</p><p style="margin-top:20px"><a class="btn" href="https://wa.me/27722110708?text=Hi%20Muntopia%20Fest%2C%20I%27d%20like%20to%20book%20an%20early-bird%20ticket.">Book on WhatsApp</a></p></div></article>
+    <article class="card ticket featured"><div class="pad"><h3>General Admission</h3><div class="price">R150</div><p>General admission.</p><p style="margin-top:20px"><a class="btn red" href="https://wa.me/27722110708?text=Hi%20Muntopia%20Fest%2C%20I%27d%20like%20to%20book%20a%20general%20ticket.">Book on WhatsApp</a></p></div></article>
+    <article class="card ticket"><div class="pad"><h3>Kids Tickets</h3><div class="price">R35</div><p>Kids admission.</p><p style="margin-top:20px"><a class="btn outline" href="https://wa.me/27722110708?text=Hi%20Muntopia%20Fest%2C%20I%27d%20like%20to%20book%20a%20kids%20ticket.">Book on WhatsApp</a></p></div></article>
+  </div>
+  <p class="notice">Early-bird price applies to the first 200 tickets. Contact the organisers on WhatsApp to confirm availability and booking arrangements.</p>
 </div></section>
 
 <section class="sponsor" id="partners"><div class="wrap sponsor-box">
@@ -89,7 +96,7 @@ form{display:grid;gap:12px}input,select,textarea{width:100%;padding:13px 14px;ba
 <section id="contact"><div class="wrap">
   <div class="section-head"><div class="eyebrow">Let's connect</div><h2>Talk to the <span class="gold">Muntopia team.</span></h2><p>For ticket enquiries, sponsorship proposals, vendor opportunities, artist enquiries or general information, send us a message.</p></div>
   <div class="grid" style="grid-template-columns:1fr 1.2fr">
-    <div><h3>Get in touch</h3><p class="muted">Email: <span id="emailText">Add your official email address</span></p><p class="muted">WhatsApp: <span id="phoneText">Add your Muntopia WhatsApp number</span></p><p class="muted">Event: 26 December 2026<br>Venue: LoCrate Market, Orlando West, Soweto</p><p class="notice">Update the contact details in the website settings before publishing.</p></div>
+    <div><h3>Get in touch</h3><p class="muted">Email: <span id="emailText">Add your official email address</span></p><p class="muted">WhatsApp: <span id="phoneText"><a href="https://wa.me/27722110708">072 211 0708 — Chat with us</a></span></p><p class="muted">Event: 26 December 2026<br>Venue: LoCrate Market, Orlando West, Soweto</p><p class="notice">For the quickest response, contact us on WhatsApp. Official email address to be added.</p></div>
     <form id="contactForm">
       <label>Your name<input name="name" required placeholder="Your full name"></label>
       <label>Email address<input name="email" type="email" required placeholder="you@example.com"></label>
@@ -98,7 +105,7 @@ form{display:grid;gap:12px}input,select,textarea{width:100%;padding:13px 14px;ba
       </label>
       <label>Message<textarea name="message" required placeholder="How can the Muntopia team help?"></textarea></label>
       <button class="btn" type="submit">SEND ENQUIRY</button>
-      <p class="notice" id="formNotice">The form will open your email app once the official email address has been configured.</p>
+      <p class="notice" id="formNotice">Email enquiries are not active yet. Please use WhatsApp while our official email address is being set up.</p>
     </form>
   </div>
 </div></section>
@@ -106,10 +113,10 @@ form{display:grid;gap:12px}input,select,textarea{width:100%;padding:13px 14px;ba
 <section class="wrap"><div class="banner"><div><h2>Be part of the Muntopia story.</h2><p>Follow the journey. Share the experience. Grow with us.</p></div><a class="btn" href="#contact">CONNECT WITH US</a></div></section>
 </main>
 
-<footer><div class="wrap footer-row"><div><div class="brand">MUN<span>TOPIA</span> FEST</div><small>Music. Entertainment. Lifestyle. Community.</small></div><div>© <span id="year"></span> Muntopia Fest. All rights reserved.<br><small>Website draft — event details to be confirmed.</small></div></div></footer>
+<footer><div class="wrap footer-row"><div><div class="brand">MUN<span>TOPIA</span> FEST</div><small>Music. Entertainment. Lifestyle. Community.</small></div><div>© <span id="year"></span> Muntopia Fest. All rights reserved.<br><small>26 December 2026 · LoCrate Market, Orlando West, Soweto.</small></div></div></footer>
 
 <script>
-/* EDIT THESE FOUR SETTINGS before publishing. Use digits only for WhatsApp, e.g. 277XXXXXXXX. */
+/* Muntopia contact and event settings. Add the official email address when available. */
 const MUNTOPIA = {
   email: "",
   whatsapp: "27722110708",
@@ -118,9 +125,7 @@ const MUNTOPIA = {
 };
 document.getElementById("year").textContent = new Date().getFullYear();
 if (MUNTOPIA.email) document.getElementById("emailText").textContent = MUNTOPIA.email;
-if (MUNTOPIA.whatsapp !== "27XXXXXXXXX") {
-  document.getElementById("phoneText").innerHTML = '<a href="https://wa.me/'+MUNTOPIA.whatsapp+'">Chat with us on WhatsApp</a>';
-}
+
 document.getElementById("contactForm").addEventListener("submit", function(e){
   e.preventDefault();
   if (!MUNTOPIA.email) {
